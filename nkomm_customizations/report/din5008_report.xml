@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <!-- New report layout for din5008 format -->
+        <template id="external_layout_din5008" inherit_id="l10n_din5008.external_layout_din5008">
+            <xpath expr="//t[@t-if='company.country_id']" position="replace"/>
+
+            <xpath expr="//t[@t-if='company.name']/span" position="attributes">
+                <attribute name="style">font-size:10px !important</attribute>
+            </xpath>
+            <xpath expr="//t[@t-if='company.street']/span[1]" position="attributes">
+                <attribute name="style">font-size:10px !important</attribute>
+            </xpath>
+            <xpath expr="//t[@t-if='company.street']/span[2]" position="attributes">
+                <attribute name="style">font-size:10px !important</attribute>
+            </xpath>
+            <xpath expr="//t[@t-if='company.street2']/span[1]" position="attributes">
+                <attribute name="style">font-size:10px !important</attribute>
+            </xpath>
+            <xpath expr="//t[@t-if='company.street2']/span[2]" position="attributes">
+                <attribute name="style">font-size:10px !important</attribute>
+            </xpath>
+            <xpath expr="//t[@t-if='company.zip']/span[1]" position="attributes">
+                <attribute name="style">font-size:10px !important</attribute>
+            </xpath>
+            <xpath expr="//t[@t-if='company.zip']/span[2]" position="attributes">
+                <attribute name="style">font-size:10px !important</attribute>
+            </xpath>
+            <xpath expr="//t[@t-if='company.city']/span[1]" position="attributes">
+                <attribute name="style">font-size:10px !important</attribute>
+            </xpath>
+            <xpath expr="//t[@t-if='company.city']/span[2]" position="attributes">
+                <attribute name="style">font-size:10px !important</attribute>
+            </xpath>
+            <xpath expr="//div[hasclass('address')]" position="attributes">
+                <attribute name="style">width:100mm !important</attribute>
+            </xpath>
+
+            <!--<xpath expr="//t[@t-if='company.city']" position="after">
+                <span style="font-size:10px !important">|</span> <span style="font-size:10px !important" t-field="company.state_id.name"/>
+            </xpath>-->
+
+            <xpath expr="//div[hasclass('information_block')]" position="attributes">
+                <attribute name="style">padding-top: 20px !important;margin-left:20px !important</attribute>
+            </xpath>
+
+            <xpath expr="//hr[hasclass('company_invoice_line')]" position="attributes">
+                <attribute name="style">width: 80% !important;margin-right: 82px !important;</attribute>
+            </xpath>
+
+            <xpath expr="//div[hasclass('company_details')]/table" position="replace">
+                <div class="text-center" style="border-top: 1px solid black;">
+                    <div class="row mt-1" style="font-size:9px;">
+                        <div class="col-3">
+                            <p class="mb-0 text-left" t-if="company.name">
+                                <span t-field="company.name"/>
+                            </p>
+                            <p class="mb-0 text-left" t-if="company.street">
+                                <span t-field="company.street"/>
+                            </p>
+                            <p class="mb-0 text-left" t-if="company.street2">
+                                <span t-field="company.street2"/>
+                            </p>
+                            <p class="mb-0 text-left">
+                                <span t-if="company.zip" t-field="company.zip"/>
+                                <span t-if="company.city" t-field="company.city"/>
+                            </p>
+                            <p class="mb-0 text-left" t-if="company.country_id">
+                                <span t-field="company.country_id.name"/>
+                            </p>
+                        </div>
+                        <div class="col-3">
+                            <p class="mb-0 text-left" t-if="company.phone">
+                                <span t-field="company.phone"/>
+                            </p>
+                            <p class="mb-0 text-left" t-if="company.email">
+                                <span t-field="company.email"/>
+                            </p>
+                            <p class="mb-0 text-left" t-if="company.website"><span t-field="company.website"/>:
+                            </p>
+                        </div>
+                        <div class="col-3">
+                            <p class="mb-0 text-left">
+                                <t t-if="company.vat"><t
+                                        t-esc="company.account_fiscal_country_id.vat_label or 'Tax ID'"/>:
+                                    <span t-field="company.vat"/>
+                                </t>
+                            </p>
+                            <p class="mb-0 text-left" t-if="company.company_registry">
+                                <t>HRB Nr:
+                                    <span t-field="company.company_registry"/>
+                                </t>
+                            </p>
+                            <p class="mb-0 text-left">
+                                <div class="text-left" t-field="company.report_footer"/>
+                            </p>
+                        </div>
+                        <div class="col-3" t-if="company.partner_id.bank_ids">
+                            <t t-foreach="company.partner_id.bank_ids[:2]" t-as="bank">
+                                <p class="mb-0 text-left">
+                                    <span t-field="bank.bank_id.name"/>
+                                </p>
+                                <p class="mb-0 text-left">IBAN:
+                                    <span t-field="bank.acc_number"/>
+                                </p>
+                                <p class="mb-0 text-left">BIC:
+                                    <span t-field="bank.bank_id.bic"/>
+                                </p>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+
+            <xpath expr="//t[@t-esc='fallback_address']" position="attributes">
+                <attribute name="t-options">{"widget": "contact", "fields": ["address", "name"], "no_marker": True}
+                </attribute>
+            </xpath>
+            <xpath expr="//div[@t-esc='doc_address[1]']" position="attributes">
+                <attribute name="t-options">{"widget": "contact", "fields": ["address", "name"], "no_marker": True}
+                </attribute>
+            </xpath>
+            <xpath expr="//t[@t-foreach='template_data']/tr/td" position="attributes">
+                <attribute name="style">padding-right:7px</attribute>
+            </xpath>
+
+        </template>
+
+    </data>
+</odoo>

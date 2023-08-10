@@ -1,0 +1,297 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* itscope_connector
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 15.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-08-02 16:51+0000\n"
+"PO-Revision-Date: 2023-08-02 16:51+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: itscope_connector
+#: model_terms:ir.ui.view,arch_db:itscope_connector.product_itscope_description
+msgid "<b>Downloads</b>"
+msgstr "<b>Downloads</b>"
+
+#. module: itscope_connector
+#: model_terms:ir.ui.view,arch_db:itscope_connector.product_itscope_description
+msgid "<b>Product Details</b>"
+msgstr "<b>Produktdetails</b>"
+
+#. module: itscope_connector
+#: model_terms:ir.ui.view,arch_db:itscope_connector.res_config_settings_view_form
+msgid "<span class=\"o_form_label\">ITscope API Credentials</span>"
+msgstr "<span class=\"o_form_label\">ITscope-API-Zugangsdaten</span>"
+
+#. module: itscope_connector
+#: model:ir.model.fields,field_description:itscope_connector.field_res_company__api_key
+#: model:ir.model.fields,field_description:itscope_connector.field_res_config_settings__api_key
+msgid "API Key"
+msgstr "API-Schlüssel"
+
+#. module: itscope_connector
+#: model_terms:ir.ui.view,arch_db:itscope_connector.res_config_settings_view_form
+msgid "API-Key"
+msgstr "API-Schlüssel"
+
+#. module: itscope_connector
+#: model_terms:ir.ui.view,arch_db:itscope_connector.res_config_settings_view_form
+msgid "Generate API key"
+msgstr "API-Schlüssel generieren"
+
+#. module: itscope_connector
+#: model:ir.model.fields,field_description:itscope_connector.field_res_company__api_access_id
+#: model:ir.model.fields,field_description:itscope_connector.field_res_config_settings__api_access_id
+msgid "Access ID"
+msgstr "Zugriffs-ID"
+
+#. module: itscope_connector
+#: model:ir.model.fields,field_description:itscope_connector.field_res_company__api_account_id
+#: model:ir.model.fields,field_description:itscope_connector.field_res_config_settings__api_account_id
+msgid "Account ID"
+msgstr "Konto-ID"
+
+#. module: itscope_connector
+#: model:ir.model,name:itscope_connector.model_res_company
+msgid "Companies"
+msgstr "Unternehmen"
+
+#. module: itscope_connector
+#: model:ir.model,name:itscope_connector.model_res_config_settings
+msgid "Config Settings"
+msgstr "Konfigurationseinstellungen"
+
+#. module: itscope_connector
+#: model:ir.model,name:itscope_connector.model_res_partner
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: itscope_connector
+#: model:ir.model.fields,field_description:itscope_connector.field_feedback_wizard__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: itscope_connector
+#: model:ir.model.fields,field_description:itscope_connector.field_feedback_wizard__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: itscope_connector
+#: model:ir.model.fields,field_description:itscope_connector.field_feedback_wizard__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: itscope_connector
+#: model:ir.model,name:itscope_connector.model_feedback_wizard
+msgid "Feedback Wizard"
+msgstr "Feedback-Assistent"
+
+#. module: itscope_connector
+#: model_terms:ir.ui.view,arch_db:itscope_connector.product_template_form_view
+msgid "Fetch Html Content"
+msgstr "HTML-Inhalt abrufen"
+
+#. module: itscope_connector
+#: model:ir.model.fields,field_description:itscope_connector.field_feedback_wizard__id
+msgid "ID"
+msgstr "ID"
+
+#. module: itscope_connector
+#: model:ir.model.fields,field_description:itscope_connector.field_res_company__base_url
+#: model:ir.model.fields,field_description:itscope_connector.field_res_config_settings__base_url
+msgid "ITscope Base URL"
+msgstr "ITscope-Basis-URL"
+
+#. module: itscope_connector
+#: model_terms:ir.ui.view,arch_db:itscope_connector.res_config_settings_view_form
+msgid "ITscope Base URL"
+msgstr "ITscope Basis-URL"
+
+#. module: itscope_connector
+#: model:ir.model.fields,field_description:itscope_connector.field_product_product__itscope_id
+#: model:ir.model.fields,field_description:itscope_connector.field_product_template__itscope_id
+msgid "ITscope ID"
+msgstr "ITscope ID"
+
+#. module: itscope_connector
+#: model:ir.model.fields,field_description:itscope_connector.field_product_product__response_text
+#: model:ir.model.fields,field_description:itscope_connector.field_product_template__response_text
+msgid "ITscope Response"
+msgstr "ITscope-Antwort"
+
+#. module: itscope_connector
+#: model_terms:ir.ui.view,arch_db:itscope_connector.product_template_form_view
+msgid "ITscope Details"
+msgstr "ITscope-Details"
+
+#. module: itscope_connector
+#: model_terms:ir.ui.view,arch_db:itscope_connector.product_template_form_view
+msgid "ITscope: Import Details"
+msgstr "ITscope: Importieren Details"
+
+#. module: itscope_connector
+#: model_terms:ir.ui.view,arch_db:itscope_connector.product_template_form_view
+msgid "ITscope: Update Details"
+msgstr "ITscope: aktualisierte Details"
+
+#. module: itscope_connector
+#: model:ir.model.fields,field_description:itscope_connector.field_res_partner__itscope_supplier_id
+#: model:ir.model.fields,field_description:itscope_connector.field_res_users__itscope_supplier_id
+msgid "Itscope Supplier"
+msgstr "Itscope-Lieferant"
+
+#. module: itscope_connector
+#: model_terms:ir.ui.view,arch_db:itscope_connector.res_config_settings_view_form
+msgid "Account ID"
+msgstr "Konto-ID"
+
+#. module: itscope_connector
+#: model:ir.model.fields,field_description:itscope_connector.field_feedback_wizard____last_update
+msgid "Last Modified on"
+msgstr ""
+
+#. module: itscope_connector
+#: model:ir.model.fields,field_description:itscope_connector.field_product_product__last_updated
+#: model:ir.model.fields,field_description:itscope_connector.field_product_template__last_updated
+msgid "Last Updated"
+msgstr ""
+
+#. module: itscope_connector
+#: model:ir.model.fields,field_description:itscope_connector.field_feedback_wizard__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: itscope_connector
+#: model:ir.model.fields,field_description:itscope_connector.field_feedback_wizard__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: itscope_connector
+#: model_terms:ir.ui.view,arch_db:itscope_connector.product_template_form_view
+msgid "Quantity available in stock"
+msgstr "Menge auf Lager verfügbar"
+
+#. module: itscope_connector
+#: model:ir.model.fields,field_description:itscope_connector.field_feedback_wizard__message
+msgid "Message"
+msgstr "Nachricht"
+
+#. module: itscope_connector
+#: model_terms:ir.ui.view,arch_db:itscope_connector.feedback_wizard_form
+msgid "Ok"
+msgstr "Ok"
+
+#. module: itscope_connector
+#: model:ir.model.fields,field_description:itscope_connector.field_product_product__name_pdf_datasheet
+#: model:ir.model.fields,field_description:itscope_connector.field_product_template__name_pdf_datasheet
+msgid "PDF Name"
+msgstr "PDF-Name"
+
+#. module: itscope_connector
+#: model:ir.model,name:itscope_connector.model_product_product
+msgid "Product"
+msgstr "Produkte"
+
+#. module: itscope_connector
+#: model:ir.model,name:itscope_connector.model_product_template
+msgid "Product Template"
+msgstr "Produktvorlage"
+
+#. module: itscope_connector
+#: model_terms:ir.ui.view,arch_db:itscope_connector.product_itscope_description
+msgid "Product description not available"
+msgstr "Produktbeschreibung nicht verfügbar"
+
+#. module: itscope_connector
+#: model_terms:ir.ui.view,arch_db:itscope_connector.product_itscope_description
+msgid "Product description not available"
+msgstr "Produktdatenblatt nicht verfügbar"
+
+#. module: itscope_connector
+#: code:addons/itscope_connector/models/product.py:0
+#, python-format
+msgid "Response Status"
+msgstr "Antwortstatus"
+
+#. module: itscope_connector
+#: model_terms:ir.ui.view,arch_db:itscope_connector.res_config_settings_view_form
+msgid "Set the API credentials for ITscope here"
+msgstr "Legen Sie hier die API-Zugangsdaten für ITscope fest"
+
+#. module: itscope_connector
+#: model:ir.model.fields,field_description:itscope_connector.field_product_product__pdf_datasheet
+#: model:ir.model.fields,field_description:itscope_connector.field_product_template__pdf_datasheet
+msgid "Standard PDF Datasheet"
+msgstr "Standard-PDF-Datenblatt"
+
+#. module: itscope_connector
+#: model:ir.model.fields,field_description:itscope_connector.field_product_product__html_datasheet
+#: model:ir.model.fields,field_description:itscope_connector.field_product_template__html_datasheet
+#: model_terms:ir.ui.view,arch_db:itscope_connector.product_template_form_view
+msgid "Standard PDF Datasheet"
+msgstr "Standard-PDF-Datenblatt"
+
+#. module: itscope_connector
+#: model_terms:ir.ui.view,arch_db:itscope_connector.product_template_form_view
+msgid "Standard PDF Datasheet"
+msgstr "Standard-PDF-Datenblatt"
+
+#. module: itscope_connector
+#: model:ir.model.fields.selection,name:itscope_connector.selection__product_template__stock_status__8
+msgid "Status Unknown"
+msgstr "Status unbekannt"
+
+#. module: itscope_connector
+#: model:ir.model.fields,field_description:itscope_connector.field_product_product__stock_available_qty
+#: model:ir.model.fields,field_description:itscope_connector.field_product_template__stock_available_qty
+msgid "Stock Available Quantity"
+msgstr "Auf Lager verfügbare Menge"
+
+#. module: itscope_connector
+#: model:ir.model.fields,field_description:itscope_connector.field_product_product__stock_status
+#: model:ir.model.fields,field_description:itscope_connector.field_product_template__stock_status
+#: model_terms:ir.ui.view,arch_db:itscope_connector.product_template_form_view
+msgid "Availability Status"
+msgstr "Verfügbarkeitsstatus"
+
+#. module: itscope_connector
+#: model_terms:ir.ui.view,arch_db:itscope_connector.res_config_settings_view_form
+msgid "Access ID"
+msgstr "Zugriffs-ID"
+
+#. module: itscope_connector
+#: model_terms:ir.ui.view,arch_db:itscope_connector.product_template_form_view
+msgid "Last updated"
+msgstr "Zuletzt aktualisiert"
+
+#. module: itscope_connector
+#: model:ir.model.fields.selection,name:itscope_connector.selection__product_template__stock_status__1
+msgid "In Stock"
+msgstr "auf Lager"
+
+#. module: itscope_connector
+#: model:ir.model.fields.selection,name:itscope_connector.selection__product_template__stock_status__4
+msgid "auftragsbezogene Bestellung"
+msgstr ""
+
+#. module: itscope_connector
+#: model:ir.model.fields.selection,name:itscope_connector.selection__product_template__stock_status__3
+msgid "im Außenlager"
+msgstr ""
+
+#. module: itscope_connector
+#: model:ir.model.fields.selection,name:itscope_connector.selection__product_template__stock_status__2
+msgid "im Zulauf"
+msgstr ""
+
+#. module: itscope_connector
+#: model:ir.model.fields.selection,name:itscope_connector.selection__product_template__stock_status__6
+msgid "nicht verfügbar"
+msgstr ""
